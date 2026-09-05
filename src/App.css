@@ -490,22 +490,22 @@ h2 {
 .collection-items span,
 .journey-list > div > span {
   color: var(--gold);
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.14em;
 }
 .why-grid h3,
 .journey-list h3 {
   color: var(--teal);
   font-family: var(--serif);
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
   margin: 13px 0 8px;
 }
 .why-grid p,
 .journey-list p {
   color: #748079;
-  font-size: 12px;
-  line-height: 1.6;
+  font-size: 15px;
+  line-height: 1.65;
   margin: 0;
 }
 .spaces {
@@ -1399,6 +1399,8 @@ h2 {
   .why-grid {
     grid-template-columns: 1fr;
   }
+  .why-grid h3 { font-size: 23px; }
+  .why-grid p { font-size: 14px; }
   .collection-list {
     padding-top: 90px;
     padding-bottom: 90px;
