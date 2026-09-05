@@ -1,4 +1,4 @@
-:root {
+y:root {
   --teal: #203a39;
   --paper: #f4f0e8;
   --gold: #b78b45;
@@ -912,21 +912,21 @@ h2 {
 }
 .milestones div {
   display: grid;
-  grid-template-columns: 70px 1fr;
-  gap: 12px;
-  padding: 15px 0;
+  grid-template-columns: 92px 1fr;
+  gap: 16px;
+  padding: 19px 0;
   border-bottom: 1px solid rgba(32, 58, 57, 0.22);
 }
 .milestones strong {
   color: var(--gold);
   font-family: var(--serif);
-  font-size: 17px;
+  font-size: 25px;
   font-weight: 500;
 }
 .milestones span {
   color: #68736c;
-  font-size: 11px;
-  line-height: 1.45;
+  font-size: 15px;
+  line-height: 1.55;
 }
 .founder-story {
   display: grid;
@@ -957,16 +957,18 @@ h2 {
 .founder-name {
   color: var(--teal);
   font-family: var(--serif);
-  font-size: 18px;
+  font-size: 26px;
+  font-weight: 700;
   margin: 30px 0 0;
 }
 .founder-name span {
-  display: block;
+  display: inline;
   color: #6d786f;
   font-family: "DM Sans", sans-serif;
-  font-size: 10px;
+  font-size: 15px;
+  font-weight: 700;
   letter-spacing: 0.14em;
-  margin-top: 7px;
+  margin-left: 8px;
   text-transform: uppercase;
 }
 .community-story {
@@ -1058,6 +1060,7 @@ h2 {
 }
 .community-slider-actions {
   display: flex;
+  white-space: nowrap;
   align-items: center;
   gap: 9px;
 }
@@ -1400,7 +1403,7 @@ h2 {
     grid-template-columns: 1fr;
   }
   .why-grid h3 {
-    font-size: 23px;
+    font-size: clamp(18px, 5.5vw, 23px);
   }
   .why-grid p {
     font-size: 14px;
@@ -1475,6 +1478,17 @@ h2 {
   }
   .proof-band blockquote {
     font-size: 28px;
+  }
+  .milestones div {
+    grid-template-columns: 82px 1fr;
+    gap: 12px;
+    padding: 16px 0;
+  }
+  .milestones strong {
+    font-size: 22px;
+  }
+  .milestones span {
+    font-size: 14px;
   }
   .community-story {
     grid-template-columns: 1fr;

@@ -10,7 +10,7 @@ import cseFestImage from "./assets/cse fest.png";
 const collections = [
   {
     title: "Living Room",
-    items: ["Sofas", "Coffee tables", "TV units", "Consoles"],
+
     products: [
       [
         "Sofas",
@@ -28,7 +28,7 @@ const collections = [
   },
   {
     title: "Bedroom",
-    items: ["Beds", "Wardrobes", "Dressing tables", "Bedside tables"],
+
     products: [
       [
         "Beds",
@@ -46,7 +46,7 @@ const collections = [
   },
   {
     title: "Dining",
-    items: ["Dining tables", "Dining chairs", "Cabinets", "Sideboards"],
+
     products: [
       [
         "Dining tables",
@@ -64,12 +64,7 @@ const collections = [
   },
   {
     title: "Office & Study",
-    items: [
-      "Executive tables",
-      "Bookshelves",
-      "Workstations",
-      "Office storage",
-    ],
+
     products: [
       [
         "Executive tables",
@@ -87,7 +82,6 @@ const collections = [
   },
   {
     title: "Bespoke / Custom",
-    items: ["Built to your space", "Made to your size", "Shaped to your taste"],
     products: [
       [
         "Custom living room",
@@ -219,7 +213,9 @@ function App() {
                       <small>
                         {productMatches.length > 0
                           ? productMatches.join(" · ")
-                          : collection.items.join(" · ")}
+                          : collection.products
+                              .map(([title]) => title)
+                              .join(" · ")}
                       </small>
                     </a>
                   ),
@@ -437,7 +433,6 @@ function App() {
               <a href={`#collection-${index + 1}`} key={collection.title}>
                 <b>0{index + 1}</b>
                 <strong>{collection.title}</strong>
-                <small>{collection.items.join(" · ")}</small>
               </a>
             ))}
           </div>
@@ -452,7 +447,6 @@ function App() {
                   <span>0{index + 1}</span>
                   <div>
                     <h3>{collection.title}</h3>
-                    <p>{collection.items.join(" · ")}</p>
                   </div>
                 </div>
                 <div className="collection-product-grid">
