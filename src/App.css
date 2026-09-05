@@ -1,4 +1,4 @@
-y:root {
+:root {
   --teal: #203a39;
   --paper: #f4f0e8;
   --gold: #b78b45;
@@ -35,9 +35,7 @@ main {
 .footer-brand {
   display: flex;
   align-items: center;
-  gap: 11px;
   text-transform: uppercase;
-  letter-spacing: 0.09em;
   font-weight: 600;
   font-size: 12px;
 }
@@ -58,6 +56,7 @@ main {
   border-radius: 50%;
   display: grid;
   place-items: center;
+  margin-right: 11px;
   font-family: var(--serif);
   font-size: 19px;
   font-weight: 500;
@@ -70,14 +69,17 @@ main {
 }
 .brand-wordmark {
   display: grid;
-  gap: 3px;
-  line-height: 1;
+  gap: 2px;
+  line-height: 0.95;
 }
 .brand-wordmark strong {
   color: #fff;
-  font-size: 15px;
-  letter-spacing: 0.16em;
+  font-size: 21px;
+  letter-spacing: 0.08em;
   font-weight: 600;
+}
+.brand-a {
+  color: var(--gold);
 }
 .brand-wordmark em {
   color: #d0ab70;
@@ -957,18 +959,18 @@ h2 {
 .founder-name {
   color: var(--teal);
   font-family: var(--serif);
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 700;
   margin: 30px 0 0;
 }
 .founder-name span {
-  display: inline;
+  display: block;
   color: #6d786f;
   font-family: "DM Sans", sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.14em;
-  margin-left: 8px;
+  margin-top: 7px;
   text-transform: uppercase;
 }
 .community-story {
@@ -1113,10 +1115,13 @@ h2 {
   align-items: center;
 }
 .showroom-brand {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 13px;
   margin-bottom: 28px;
+  padding: 14px 18px;
+  border-radius: 8px;
+  background: var(--teal);
 }
 .showroom-brand img {
   width: 112px;
@@ -1124,7 +1129,7 @@ h2 {
   object-fit: contain;
 }
 .showroom-brand span {
-  color: #7b857e;
+  color: #d8b67b;
   font-size: 9px;
   letter-spacing: 0.12em;
   text-transform: uppercase;

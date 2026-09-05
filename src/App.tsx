@@ -179,7 +179,9 @@ function App() {
         >
           <span className="brand-mark">H</span>
           <span className="brand-wordmark">
-            <strong>HEAVEN</strong>
+            <strong>
+              HE<span className="brand-a">A</span>VEN
+            </strong>
             <em>FURNITURE MART</em>
           </span>
         </a>
