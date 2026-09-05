@@ -16,6 +16,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
+  font-size: 13px;
 }
 button,
 input,
