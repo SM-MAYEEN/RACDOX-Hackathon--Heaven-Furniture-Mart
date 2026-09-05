@@ -120,8 +120,8 @@ const journey = [
 const communityStories = [
   {
     image: cseFestImage,
-    title: "Supporting the IIUC CSE Fest 2025",
-    text: "Heaven Furniture Mart supported the IIUC CSE Fest 2025 Rally as a sponsor, standing behind the students and community shaping Chattogram's future.",
+    title: "Supporting the IIUC CSE Fest 2024",
+    text: "Heaven Furniture Mart supported the IIUC CSE Fest 2024 Rally as a sponsor, standing behind the students and community shaping Chattogram's future.",
   },
   {
     image: storyOneImage,
