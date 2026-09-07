@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./App.css";
-import storyOneImage from "./assets/1.jpg";
+import storyOneImage from "./assets/1.png";
 import storyTwoImage from "./assets/2.png";
-import storyThreeImage from "./assets/3.jpg";
+import storyThreeImage from "./assets/3.png";
 import storyFourImage from "./assets/4.png";
-import storyFiveImage from "./assets/5.jpg";
+import storyFiveImage from "./assets/5.png";
 import cseFestImage from "./assets/cse fest.png";
 
 const collections = [
